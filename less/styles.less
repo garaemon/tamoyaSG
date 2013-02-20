@@ -64,6 +64,20 @@ body {
 #content {
     color: white;
     background-color: black;
+    .link-hierarchy {
+        font-size: 12px;
+        line-height: 25px;
+        height: 25px;
+        background-color: rgb(62, 45, 37);
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    #menu-banner {
+        background-color: black;
+        text-align: center;
+    }
     #top-slide-show-box {
         padding-top: 10px;
         .carousel-inner {
@@ -85,7 +99,59 @@ body {
             margin: 0 auto;
         }
     }
-    #news-section {
+    #menu-section {
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            padding-top: 10px;
+            li {
+                background-image: url("../images/enum_leader.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 16px;
+                padding-right: 20px;
+                color: white;
+                font-size: 14px;
+                a {
+                    display: inline-block;
+                    color: white;
+                    text-shadow: none;
+                }
+            }
+        }
+        .menu-box {
+            padding-top: 60px;
+            h3 {
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+                font-family: serif;
+                font-size: 18px;
+                border-bottom: 1px dotted white;
+                margin-bottom: 20px;
+            }
+            .menu-content {
+                .row-fluid {
+                    padding-top: 10px;
+                }
+                h4 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 18px;
+                }
+                img {
+                    display: block;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+    
+    #news-section, #menu-section {
         background-color: rgb(36, 27, 21);
         h2 {
             padding: 0;
@@ -98,12 +164,13 @@ body {
             padding: 0;
             margin: 0;
             height: 5px;
+            border-radius: 0px;
             .bar {
                 background-color: orange;
                 background-image: none;
             }
         }
-        ul {
+        ul.news-list {
             list-style: none;
             padding: 0;
             margin: 0;
@@ -221,3 +288,10 @@ body {
 
 // facebook like box
 .fb-like-box {background-color: #fff; }
+
+ul.banners {
+    list-style: none;
+    li {
+        margin-top: 20px;
+    }
+}
