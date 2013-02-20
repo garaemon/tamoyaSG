@@ -5,6 +5,39 @@
   color: white;
   background-color: black;
 }
+#content #contact-box img.map-image {
+  float: left;
+  padding-right: 20px;
+}
+#content #contact-box #info-box h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+#content #contact-box #info-box dl dt {
+  font-size: 14px;
+}
+#content #contact-box #info-box dl dd {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+#footer #footer-link-box {
+  background-color: #3e2d25;
+}
+#footer #footer-link-box .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+#footer #footer-link-box .breadcrumb li {
+  color: white;
+  font-size: 12px;
+}
+#footer #footer-link-box .breadcrumb li a {
+  color: white;
+  text-shadow: none;
+}
 #footer #copyright-box {
   background-color: #e88133;
 }
