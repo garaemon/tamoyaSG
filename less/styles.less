@@ -16,20 +16,32 @@ body {
 }
 
 #header {
-    height: 100px;
+    height: 120px;
     background-color: white;
     border-bottom: 5px solid rgb(232, 129, 51);
     position: relative;
+    img#header-logo-bg {
+        margin-left: -100px;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        img {
+            width: 199px;
+            height: 60px;
+        }
+    }
     .navbar {
         position: absolute;
         padding: 0;
         margin: 0;
         bottom: 0;
         height: 40px;
+        z-index: 10;
         .navbar-inner {
             border: none;
             box-shadow: none;
-            background-color: #fff;
+            background-color: transparent;
             background-image: none;
             .nav {
                 .active a {
