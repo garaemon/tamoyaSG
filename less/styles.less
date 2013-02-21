@@ -111,38 +111,44 @@ body {
             height: 117px;
         }
     }
-    #top-slide-show-box {
-        padding-top: 10px;
-        .carousel {
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-        .carousel-inner {
-            img{
-                width: 960px;
-                height: 320px;
+    #slide-section {
+        #top-slide-show-box {
+            background-image: url(../images/takumi.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            
+            padding-top: 10px;
+            .carousel {
+                padding-bottom: 0;
+                margin-bottom: 0;
             }
-        }
-        .carousel-indicators {
-            height: 30px;
-            li {
-                padding: 0;
-                margin: 0;
-                width: 10px;
-                height: 10px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                margin-left: 5px;
-                margin-right: 5px;
-                background-color: white;
+            .carousel-inner {
+                img{
+                    width: 960px;
+                    height: 320px;
+                }
             }
-            .active {
-                background-color: orange;
+            .carousel-indicators {
+                height: 30px;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    background-color: white;
+                }
+                .active {
+                    background-color: orange;
+                }
+                //padding-top: 10px;
+                position: static;
+                width: 20px * 5;
+                margin: 0 auto;
             }
-            //padding-top: 10px;
-            position: static;
-            width: 20px * 5;
-            margin: 0 auto;
         }
     }
     #menu-section {
