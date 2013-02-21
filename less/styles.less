@@ -51,6 +51,7 @@ body {
         height: 40px;
         z-index: 10;
         .navbar-inner {
+            margin-left: 90px;
             border: none;
             box-shadow: none;
             background-color: transparent;
@@ -59,19 +60,17 @@ body {
                 .active a {
                     .background-gradient(rgb(244, 169, 52), rgb(232, 129, 51));
                     background-color: rgb(244, 169, 52);
+                    box-shadow: none;
+                    color: white;
                 }
                 li {
-                    font-size: 15px;
-                    width: 170px;
+                    font-size: 17px;
+                    width: 160px;
                     text-align: center;
                     line-height: 40px;
                     &.small {
                         font-size: 12px;
                         line-height: 20px;
-                    }
-                    .active a {
-                        box-shadow: none;
-                        color: white;
                     }
                     a {
                         padding: 0;
@@ -174,6 +173,28 @@ body {
             
         }
     }
+
+    #news-section {
+        border-top: 1px solid rgb(63, 55, 49);
+        #latest-news-box {
+            padding-top: 15px;
+            float: left;
+            padding-left: 20px;
+            width: 600px;
+        }
+        #store-image-box {
+            width: 280px;
+            float: left;
+            padding-left: 40px;
+            padding-bottom: 25px;
+            .store-image {
+                width: 280px;
+                padding-top: 45px;
+                display: block;
+                
+            }
+        }
+    }
     
     #news-section, #menu-section {
         background-color: rgb(36, 27, 21);
@@ -183,6 +204,7 @@ body {
             font-weight: normal;
             font-family: serif;
             font-size: 20px;
+            padding-left: 5px;
         }
         .progress {
             padding: 0;
@@ -199,6 +221,7 @@ body {
             padding: 0;
             margin: 0;
             padding-top: 10px;
+            padding-left: 10px;
             li {
                 font-size: 14px;
                 padding: 0;
@@ -219,24 +242,27 @@ body {
                 padding-bottom: 10px;
                 text-align: right;
                 a {
+                    font-family: serif;
+                    line-height: 16px;
+                    padding-bottom: 1px;
+                    background-image: url("../images/enum_leader.png");
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    padding-left: 16px;
+                    display: inline-block;
                     color: white;
-                    text-decoration: underline;
                 }
             }
             
         }
-        .store-image {
-            padding-top: 45px;
-            display: block;
-            padding-bottom: 20px;
-        }
+        
     }
     #lower-conent-box {
-        padding-top: 20px;
+        padding-top: 30px;
     }
     #contact-box {
         height: 280px;
-        img.map-image {
+        #map-frame {
             float: left;
             padding-right: 20px;
         }
