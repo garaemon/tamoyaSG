@@ -8,7 +8,7 @@
     background-image:         linear-gradient( @top , @bottom );
 }
 
-
+@serif: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;;
 
 
 body {
@@ -17,8 +17,8 @@ body {
 
 #header {
     height: 118px;
-    background-color: rgb(244, 244, 244);
-    border-bottom: 5px solid rgb(224, 109, 30);
+    background-color: rgb(254, 254, 254);
+    border-bottom: 3px solid rgb(224, 109, 30);
     border-top: 2px solid black;
     position: relative;
     #header-right-upper-links {
@@ -72,7 +72,7 @@ body {
                     }
                     a {
                         padding: 0;
-                        font-family: serif;
+                        font-family: @serif;
                         color: black;
                         text-shadow: none;
                     }
@@ -85,7 +85,7 @@ body {
 #content {
     color: white;
     background-color: black;
-    border-top: 1px solid rgb(84, 84, 84);
+    border-top: 2px solid rgb(66, 66, 66);
     .link-hierarchy {
         font-size: 12px;
         line-height: 25px;
@@ -115,8 +115,9 @@ body {
         background-position: 125% top;
         #top-slide-show-box {
             
-            height: 360px;
-            padding-top: 10px;
+            height: 350px;
+            padding-top: 8px;
+            padding-bottom:0;
             .carousel {
                 padding-bottom: 0;
                 margin-bottom: 0;
@@ -169,7 +170,7 @@ body {
                 padding-left: 16px;
                 padding-right: 20px;
                 color: white;
-                font-family: serif;
+                font-family: @serif;
                 font-size: 12px;
                 line-height: 16px;
                 a {
@@ -187,7 +188,7 @@ body {
                 padding: 0;
                 margin: 0;
                 font-weight: normal;
-                font-family: serif;
+                font-family: @serif;
                 font-size: 14px;
                 line-height: 22px;
                 border-bottom: 1px dotted white;
@@ -226,8 +227,8 @@ body {
             list-style: none;
             padding: 0;
             margin: 0;
-            padding-top: 10px;
-            padding-left: 10px;
+            padding-top: 2px;
+            padding-left: 18px;
             li {
                 font-size: 12px;
                 padding: 0;
@@ -254,11 +255,11 @@ body {
             p {
                 padding: 0;
                 margin: 0;
-                padding-top: 10px;
+                padding-top: 30px;
                 padding-bottom: 10px;
                 text-align: right;
                 a {
-                    font-family: serif;
+                    font-family: @serif;
                     line-height: 16px;
                     padding-bottom: 1px;
                     background-image: url("../images/enum_leader.png");
@@ -278,7 +279,7 @@ body {
             padding-bottom: 25px;
             .store-image {
                 width: 280px;
-                padding-top: 45px;
+                padding-top: 43px;
                 display: block;
                 
             }
@@ -288,7 +289,7 @@ body {
     .index-section {
         background-color: rgb(36, 27, 21);
         .index-box {
-            padding-top: 15px;
+            padding-top: 6px;
             float: left;
             padding-left: 20px;
             width: 600px;
@@ -296,9 +297,10 @@ body {
                 padding: 0;
                 margin: 0;
                 font-weight: normal;
-                font-family: serif;
+                font-family: @serif;
                 font-size: 20px;
                 padding-left: 5px;
+                height: 26px; 
             }
         }
         
@@ -357,8 +359,7 @@ body {
 #footer {
     #footer-link-box {
         height: 45px;
-        background-color: rgb(62, 45, 37);
-        padding-top: 2.5px;
+        background-color: rgb(50, 35, 30);
         .breadcrumb {
             background-color: transparent;
             padding: 0;
@@ -367,8 +368,8 @@ body {
                 padding: 0;
                 margin: 0;
                 color: white;
-                font-size: 12px;
-                line-height: 12px;
+                font-size: 10px;
+                line-height: 10px;
                 a {
                     color: white;
                     text-shadow: none;
@@ -395,14 +396,15 @@ body {
         height: 25px;
         background-color: rgb(232, 129, 51);
         p {
+            font-weight: bold;
             line-height: 25px;
             height: 25px;
-            font-size: 12px;
+            font-size: 10px;
             color: rgb(122, 42, 19);
             padding: 0;
             margin: 0;
             text-align: center;
-            font-family: serif;
+            font-family: @serif;
         }
     }
 }
