@@ -8,11 +8,14 @@
     background-image:         linear-gradient( @top , @bottom );
 }
 
-@serif: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
-
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+@serif: @serifFontFamily;
 
 body {
     background-color: black;
+    font-family: @sansFontFamily;
 }
 
 #header {
@@ -23,12 +26,15 @@ body {
     position: relative;
     #header-right-upper-links {
         padding-top: 20px;
+        margin-left: 75px;
+        width: 220px;
         a:hover {
-            
+            text-decoration: none;
         }
         .link-text {
             color: black;
             text-decoration: underline;
+            padding-right: 10px;
         }
     }
     .logo {
@@ -62,7 +68,7 @@ body {
                     color: white;
                 }
                 li {
-                    font-size: 17px;
+                    font-size: 16px;
                     width: 160px;
                     text-align: center;
                     line-height: 40px;
@@ -87,13 +93,13 @@ body {
     background-color: black;
     border-top: 2px solid rgb(66, 66, 66);
     .link-hierarchy {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 25px;
         height: 25px;
         .container {
             padding-left: 40px;
         }
-        padding-left: 40px;
+        padding-left: 15px;
         background-color: rgb(62, 45, 37);
         a {
             color: white;
@@ -156,6 +162,9 @@ body {
     }
     #menu-section {
         padding-bottom: 50px;
+        #menu-index {
+        padding-top: 25px;
+        }
         .breadcrumb {
             background-color: transparent;
             padding: 0;
@@ -182,7 +191,7 @@ body {
         }
         .menu-box {
             clear: left;
-            padding-top: 30px;
+            padding-top: 40px;
             padding-left: 20px;
             h3 {
                 padding: 0;
@@ -238,7 +247,7 @@ body {
                 clear: left;
                 .date {
                     float: left;
-                    width: 55px;
+                    width: 60px;
                 }
                 .headline {
                     float: left;
@@ -298,7 +307,7 @@ body {
                 margin: 0;
                 font-weight: normal;
                 font-family: @serif;
-                font-size: 20px;
+                font-size: 18px;
                 padding-left: 5px;
                 height: 26px; 
             }
@@ -369,7 +378,8 @@ body {
                 margin: 0;
                 color: white;
                 font-size: 10px;
-                line-height: 10px;
+                //line-height: 10px;
+                line-height: 45px;
                 a {
                     color: white;
                     text-shadow: none;
@@ -416,6 +426,12 @@ ul.banners {
     list-style: none;
     padding-top: 5px;
     li {
-        margin-top: 20px;
+        margin-top: 25px;
     }
+}
+#map_canvas {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
 }
