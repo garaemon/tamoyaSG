@@ -112,20 +112,24 @@ body {
         }
     }
     #slide-section {
+        background-image: url(../images/takumi.png);
+        background-repeat: no-repeat;
+        background-position: 125% top;
         #top-slide-show-box {
-            background-image: url(../images/takumi.png);
-            background-repeat: no-repeat;
-            background-position: right center;
             
+            height: 360px;
             padding-top: 10px;
             .carousel {
                 padding-bottom: 0;
                 margin-bottom: 0;
             }
             .carousel-inner {
-                img{
-                    width: 960px;
+                .item {
                     height: 320px;
+                    img{
+                        width: 960px;
+                        height: 320px;
+                    }
                 }
             }
             .carousel-indicators {
