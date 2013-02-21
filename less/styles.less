@@ -8,11 +8,14 @@
     background-image:         linear-gradient( @top , @bottom );
 }
 
-@serif: Georgia, "Times New Roman", Times, serif;
-
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+@serif: @serifFontFamily;
 
 body {
     background-color: black;
+    font-family: @sansFontFamily;
 }
 
 #header {
@@ -62,7 +65,7 @@ body {
                     color: white;
                 }
                 li {
-                    font-size: 17px;
+                    font-size: 16px;
                     width: 160px;
                     text-align: center;
                     line-height: 40px;
@@ -87,13 +90,13 @@ body {
     background-color: black;
     border-top: 2px solid rgb(66, 66, 66);
     .link-hierarchy {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 25px;
         height: 25px;
         .container {
             padding-left: 40px;
         }
-        padding-left: 40px;
+        padding-left: 15px;
         background-color: rgb(62, 45, 37);
         a {
             color: white;
@@ -156,6 +159,9 @@ body {
     }
     #menu-section {
         padding-bottom: 50px;
+        #menu-index {
+        padding-top: 25px;
+        }
         .breadcrumb {
             background-color: transparent;
             padding: 0;
@@ -182,7 +188,7 @@ body {
         }
         .menu-box {
             clear: left;
-            padding-top: 30px;
+            padding-top: 40px;
             padding-left: 20px;
             h3 {
                 padding: 0;
@@ -298,7 +304,7 @@ body {
                 margin: 0;
                 font-weight: normal;
                 font-family: @serif;
-                font-size: 20px;
+                font-size: 18px;
                 padding-left: 5px;
                 height: 26px; 
             }
