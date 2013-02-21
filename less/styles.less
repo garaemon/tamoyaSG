@@ -92,6 +92,10 @@ body {
         font-size: 12px;
         line-height: 25px;
         height: 25px;
+        .container {
+            padding-left: 40px;
+        }
+        padding-left: 40px;
         background-color: rgb(62, 45, 37);
         a {
             color: white;
@@ -101,47 +105,61 @@ body {
     #menu-banner {
         background-color: black;
         text-align: center;
+        border-bottom: 1px solid rgb(84, 84, 84);
+        img {
+            width: 941px;
+            height: 117px;
+        }
     }
-    #top-slide-show-box {
-        padding-top: 10px;
-        .carousel {
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-        .carousel-inner {
-            img{
-                width: 960px;
-                height: 320px;
+    #slide-section {
+        #top-slide-show-box {
+            background-image: url(../images/takumi.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            
+            padding-top: 10px;
+            .carousel {
+                padding-bottom: 0;
+                margin-bottom: 0;
             }
-        }
-        .carousel-indicators {
-            height: 30px;
-            li {
-                padding: 0;
-                margin: 0;
-                width: 10px;
-                height: 10px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                margin-left: 5px;
-                margin-right: 5px;
-                background-color: white;
+            .carousel-inner {
+                img{
+                    width: 960px;
+                    height: 320px;
+                }
             }
-            .active {
-                background-color: orange;
+            .carousel-indicators {
+                height: 30px;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    background-color: white;
+                }
+                .active {
+                    background-color: orange;
+                }
+                //padding-top: 10px;
+                position: static;
+                width: 20px * 5;
+                margin: 0 auto;
             }
-            //padding-top: 10px;
-            position: static;
-            width: 20px * 5;
-            margin: 0 auto;
         }
     }
     #menu-section {
+        padding-bottom: 50px;
         .breadcrumb {
             background-color: transparent;
             padding: 0;
             margin: 0;
             padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
             li {
                 background-image: url("../images/enum_leader.png");
                 background-repeat: no-repeat;
@@ -149,7 +167,9 @@ body {
                 padding-left: 16px;
                 padding-right: 20px;
                 color: white;
-                font-size: 14px;
+                font-family: serif;
+                font-size: 12px;
+                line-height: 16px;
                 a {
                     display: inline-block;
                     color: white;
@@ -158,28 +178,38 @@ body {
             }
         }
         .menu-box {
-            padding-top: 60px;
+            clear: left;
+            padding-top: 30px;
+            padding-left: 20px;
             h3 {
                 padding: 0;
                 margin: 0;
                 font-weight: normal;
                 font-family: serif;
-                font-size: 18px;
+                font-size: 14px;
+                line-height: 22px;
                 border-bottom: 1px dotted white;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                padding-left: 5px;
             }
             .menu-content {
+                padding-left: 10px;
+                padding-right: 10px;
                 .row-fluid {
                     padding-top: 10px;
+                    .span4 {
+                        min-height: 0px;
+                    }
                 }
                 h4 {
                     padding: 0;
                     margin: 0;
-                    font-size: 18px;
+                    font-size: 14px;
+                    line-height: 20px;
                 }
                 img {
                     display: block;
-                    padding-top: 10px;
+                    padding-top: 5px;
                     padding-bottom: 10px;
                     width: 100%;
                 }
@@ -190,46 +220,6 @@ body {
 
     #news-section {
         border-top: 1px solid rgb(63, 55, 49);
-        #latest-news-box {
-            padding-top: 15px;
-            float: left;
-            padding-left: 20px;
-            width: 600px;
-        }
-        #store-image-box {
-            width: 280px;
-            float: left;
-            padding-left: 40px;
-            padding-bottom: 25px;
-            .store-image {
-                width: 280px;
-                padding-top: 45px;
-                display: block;
-                
-            }
-        }
-    }
-    
-    #news-section, #menu-section {
-        background-color: rgb(36, 27, 21);
-        h2 {
-            padding: 0;
-            margin: 0;
-            font-weight: normal;
-            font-family: serif;
-            font-size: 20px;
-            padding-left: 5px;
-        }
-        .progress {
-            padding: 0;
-            margin: 0;
-            height: 5px;
-            border-radius: 0px;
-            .bar {
-                background-color: orange;
-                background-image: none;
-            }
-        }
         ul.news-list {
             list-style: none;
             padding: 0;
@@ -278,6 +268,47 @@ body {
                 }
             }
             
+        }
+        #store-image-box {
+            width: 280px;
+            float: left;
+            padding-left: 40px;
+            padding-bottom: 25px;
+            .store-image {
+                width: 280px;
+                padding-top: 45px;
+                display: block;
+                
+            }
+        }
+    }
+    
+    .index-section {
+        background-color: rgb(36, 27, 21);
+        .index-box {
+            padding-top: 15px;
+            float: left;
+            padding-left: 20px;
+            width: 600px;
+            h2 {
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+                font-family: serif;
+                font-size: 20px;
+                padding-left: 5px;
+            }
+        }
+        
+        .progress {
+            padding: 0;
+            margin: 0;
+            height: 5px;
+            border-radius: 0px;
+            .bar {
+                background-color: orange;
+                background-image: none;
+            }
         }
         
     }
@@ -374,6 +405,7 @@ body {
 
 ul.banners {
     list-style: none;
+    padding-top: 5px;
     li {
         margin-top: 20px;
     }
