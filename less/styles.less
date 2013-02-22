@@ -332,7 +332,26 @@ body {
         margin-left: 20px;
     }
     #contact-box {
-        height: 215px;
+        #map-box {
+            float: left;
+            width: 250px;
+            margin-right: 20px;
+            #map_canvas {
+                height: 200px;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                text-align: right;
+                font-size: 12px;
+                a {
+                    color: white;
+                }
+            }
+        }
+        
+        //height: 215px;
+        height: 230px;
         padding-left: 20px;
         #map-frame {
             float: left;
@@ -428,10 +447,4 @@ ul.banners {
     li {
         margin-top: 25px;
     }
-}
-#map_canvas {
-    width: 250px;
-    height: 200px;
-    float: left;
-    margin-right: 20px;
 }
