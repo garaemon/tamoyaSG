@@ -167,10 +167,14 @@ body {
             }
         }
     }
+
     #menu-section {
         padding-bottom: 50px;
         #menu-index {
-        padding-top: 25px;
+            padding-top: 25px;
+            .stroke-box {
+                padding-top: 0;
+            }
         }
         .breadcrumb {
             background-color: transparent;
@@ -237,6 +241,13 @@ body {
         }
     }
 
+    #tamoya-section {
+        padding-bottom: 50px;
+        #title-index {
+            padding-top: 25px;
+        }
+    }
+    
     #news-section {
         border-top: 1px solid rgb(63, 55, 49);
         ul.news-list {
@@ -316,19 +327,41 @@ body {
                 font-family: @serif;
                 font-size: 18px;
                 padding-left: 5px;
-                height: 26px; 
+                height: 26px;
             }
-        }
-        
-        .progress {
-            padding: 0;
-            margin: 0;
-            height: 5px;
-            border-radius: 0px;
-            .bar {
-                background-color: orange;
-                background-image: none;
+            .stroke-box {
+                height: 3px;
+                padding-top: (20px - 3px) / 2.0;
+                padding-bottom: (20px - 3px) / 2.0;
             }
+
+            .subsection {
+                padding-right: 15px;
+                padding-left: 10px;
+                padding-bottom: 40px;
+                &#gifts-subsection {
+                    padding-bottom: 20px;
+                }
+                .section-title-image {
+                    height: 45px;
+                    float: none;
+                    padding-top: 20px;
+                    display: block;
+                }
+                p {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 15px;
+                    padding-bottom: 10px;
+                    &.introduction {
+                        font-weight: bold;
+                        
+                    }
+                    
+                }
+            }
+            
         }
         
     }
@@ -404,13 +437,14 @@ body {
         }
         p.description {
             font-weight: normal;
-            font-size: 12px;
+            font-size: 10px;
+            line-height: 15px;
             padding: 0;
             margin: 0;
             padding-top: 20px;
             padding-left: 20px;
         }
-        img {
+        img#tamoya-kurokawa-image {
             float: right;
         }
     }
