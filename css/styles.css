@@ -59,7 +59,7 @@ body {
   line-height: 40px;
 }
 #header .navbar .navbar-inner .nav li.small {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 }
 #header .navbar .navbar-inner .nav li a {
@@ -147,6 +147,9 @@ body {
 #content #menu-section #menu-index {
   padding-top: 25px;
 }
+#content #menu-section #menu-index .stroke-box {
+  padding-top: 0;
+}
 #content #menu-section .breadcrumb {
   background-color: transparent;
   padding: 0;
@@ -208,6 +211,47 @@ body {
   padding-top: 5px;
   padding-bottom: 10px;
   width: 100%;
+}
+#content #sanuki-section {
+  padding-bottom: 60px;
+}
+#content #sanuki-section .sanuku-section-title {
+  display: block;
+  padding-top: 30px;
+}
+#content #sanuki-section .subsection-content {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+#content #sanuki-section .row-fluid .span-image {
+  float: left;
+  width: 280px;
+}
+#content #sanuki-section .row-fluid .span-image.larger {
+  width: 345px;
+}
+#content #sanuki-section .row-fluid .span-sentence {
+  float: left;
+  width: 180px;
+}
+#content #sanuki-section .row-fluid .span-sentence.left {
+  width: 250px;
+  margin-right: 10px;
+}
+#content #sanuki-section .row-fluid .span-sentence p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+#content #tamoya-section,
+#content #how-to-order-section {
+  padding-bottom: 50px;
+}
+#content #tamoya-section #title-index,
+#content #how-to-order-section #title-index {
+  padding-top: 25px;
+  position: relative;
 }
 #content #news-section {
   border-top: 1px solid #3f3731;
@@ -280,24 +324,82 @@ body {
   padding-left: 20px;
   width: 600px;
 }
+#content .index-section .index-box .index-content {
+  padding-left: 10px;
+}
+#content .index-section .index-box .index-content p.short-description {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#content .index-section .index-box .index-content .step .step-image {
+  float: left;
+  width: 180px;
+  margin-right: 20px;
+}
+#content .index-section .index-box .index-content .step .step-content {
+  float: left;
+  width: 380px;
+}
+#content .index-section .index-box .index-content .step .step-content p {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+#content .index-section .index-box .index-content .arrow-box {
+  width: 590px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#content .index-section .index-box .index-content .arrow-box img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
 #content .index-section .index-box h2 {
   padding: 0;
   margin: 0;
   font-weight: normal;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 17px;
   padding-left: 5px;
-  height: 26px;
+  line-height: 16px;
 }
-#content .index-section .progress {
+#content .index-section .index-box .stroke-box {
+  height: 3px;
+  padding-top: 0px;
+  padding-bottom: 8.5px;
+}
+#content .index-section .index-box .subsection {
+  padding-right: 15px;
+  padding-left: 0px;
+  padding-bottom: 40px;
+}
+#content .index-section .index-box .subsection#noodle-subsection {
+  padding-top: 20px;
+}
+#content .index-section .index-box .subsection#gifts-subsection {
+  padding-bottom: 20px;
+}
+#content .index-section .index-box .subsection .section-title-image {
+  height: 45px;
+  float: none;
+  padding-top: 20px;
+  display: block;
+}
+#content .index-section .index-box .subsection p {
   padding: 0;
   margin: 0;
-  height: 5px;
-  border-radius: 0px;
+  font-size: 14px;
+  line-height: 15px;
+  padding-bottom: 10px;
 }
-#content .index-section .progress .bar {
-  background-color: orange;
-  background-image: none;
+#content .index-section .index-box .subsection p.introduction {
+  font-weight: bold;
 }
 #content #lower-conent-box {
   padding-top: 30px;
@@ -351,6 +453,35 @@ body {
 }
 #content #contact-box #info-box dl dd a {
   color: white;
+}
+#content #tamoya-section h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#content #tamoya-section p.description {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+#content #tamoya-section img#tamoya-kurokawa-image {
+  float: right;
+  padding-left: 10px;
+}
+#content #tamoya-section img#stamp-image {
+  float: right;
+  display: block;
+  bottom: 0px;
+  position: absolute;
+  right: 240px;
 }
 #footer #footer-link-box {
   height: 45px;
