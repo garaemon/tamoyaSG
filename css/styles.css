@@ -332,6 +332,7 @@ body {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 40px;
+  font-size: 12px;
 }
 #content .index-section .index-box .index-content .step .step-image {
   float: left;
